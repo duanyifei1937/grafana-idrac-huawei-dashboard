@@ -1,0 +1,9 @@
+modules:
+  huawei_idrac:
+    walk:
+      # 全部指标
+      - 1.3.6.1
+    version: 2
+    timeout: 30s
+    auth:
+      community: public

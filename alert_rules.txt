@@ -1,0 +1,35 @@
+huawei服务器硬件规则：
+
+systemHealth >1 
+
+
+# 硬件电源状态
+systemPowerState != 2
+powerSupplyEntireStatus >= 3
+powerSupplyStatus >= 3
+
+# 风扇
+fanEntireStatus >= 3
+fanStatus >= 3
+
+# 网卡
+netCardStatus >= 3
+
+# cpu
+cpuEntireStatus >= 3
+cpuStatus >= 3
+
+# memory
+memoryEntireStatus >= 3
+
+
+# disk
+hardDiskEntireStatus >= 3
+
+
+# temp
+temperatureEntireStatus >= 3
+temperatureReading >= 650
+
+# raid
+raidControllerHealthStatus != 0
